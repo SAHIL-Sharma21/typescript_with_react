@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <h1>TypeScript with react</h1>
-      <Button text='Click btn' />
-      <Button text='another way'/>
+      <Button text='Click btn' onClick={() => console.log("Button 1 clicked!")} />
+      <Button text='another way' onClick={() => alert("Button 2 Clicked!")}/>
     </div>
   );
 }

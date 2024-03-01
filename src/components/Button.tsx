@@ -4,6 +4,8 @@ import React from 'react'
 //preffered way of passing the props we can use interface or create type
 interface MyButton {
     text: string,
+    //using onclick function and making in interface
+    onClick: () => void
 }
 
 //React.FC is a functional component
@@ -15,8 +17,8 @@ interface MyButton {
 
 
 //another way we can do like this
-const Button: React.FC<MyButton> = ({text}) => {
-    return <button>{text}</button>
+const Button: React.FC<MyButton> = ({text, onClick}) => {
+    return <button onClick={onClick}>{text}</button>
 }
 
 export default Button;
