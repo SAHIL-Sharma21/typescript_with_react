@@ -5,7 +5,11 @@ import React from 'react'
 interface MyButton {
     text: string,
     //using onclick function and making in interface
-    onClick: () => void
+    // onClick: () => void, 
+    onClick?: () => void, //making onClick optional parameter when passing to component
+    isClickable?: boolean, //making boolean
+    //multiple types
+    text2?: string | number | boolean,
 }
 
 //React.FC is a functional component
