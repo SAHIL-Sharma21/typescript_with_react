@@ -1,6 +1,7 @@
 import './App.css';
 import Button from './components/Button'; //Button is aa functional component
 import Button2 from './components/Button2';
+import MyForm from './components/Form';
 
 
 function App() {
@@ -27,6 +28,10 @@ function App() {
         <Button2 text='strBtn'  isClickable = {false}/>
       </div>
 
+    {/* handling form using TS  */}
+    <div>
+        <MyForm />
+    </div>
     </>
   );
 }
