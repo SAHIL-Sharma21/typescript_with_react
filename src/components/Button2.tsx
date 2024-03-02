@@ -26,7 +26,7 @@ const Button2: React.FC<MyButton> = ({text, onClick, isClickable}) => {
     const [strValue, setStrValue] = useState<string>('a');
     
     // using Book as a type as Book is object so we are setting default notes as object
-    const [notes, setNotesd] = useState<Book>({
+    const [notes, setNotes] = useState<Book>({
         name: 'Javacript notes',
         price: 4500
     });
@@ -41,6 +41,7 @@ const Button2: React.FC<MyButton> = ({text, onClick, isClickable}) => {
             <button onClick={() => setStrValue('b')}>{text} : {strValue}</button>
 
             <h3>{notes.name}</h3>
+            <button onClick={() => setNotes({name:'javascript notes books', price: 500})}>{notes.name}: {notes.price}</button>
         </>
     )
 }
