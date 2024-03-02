@@ -1,9 +1,11 @@
 import './App.css';
 import Button from './components/Button'; //Button is aa functional component
+import Button2 from './components/Button2';
 
 
 function App() {
   return (
+    <>
     <div className="App">
       <h1>TypeScript with react</h1>
       <Button text='Click btn' onClick={() => console.log("Button 1 clicked!")} />
@@ -17,6 +19,15 @@ function App() {
 
       <Button text='btn 5'/>
     </div>
+
+      {/* rendering button2 component here  */}
+      <div>
+        {/* <Button2 text='comp 2'  isClickable = {true}/> */}
+        {/* string button  */}
+        <Button2 text='strBtn'  isClickable = {false}/>
+      </div>
+
+    </>
   );
 }
 
