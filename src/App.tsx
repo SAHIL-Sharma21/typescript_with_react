@@ -13,7 +13,9 @@ function App() {
       <Button text='btn 3 optional onclick'/>
 
       {/* multiple types and boolean  */}
-      <Button text='btn 4' isClickable = {true} text2= {25}/> 
+      <Button text='btn 4' isClickable = {true} text2= {25} onClick={() => alert('btn 4 clicked!')}/> 
+
+      <Button text='btn 5'/>
     </div>
   );
 }
