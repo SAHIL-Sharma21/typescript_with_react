@@ -1,6 +1,5 @@
 //here we are going to handle form in react using Typescript
 
-import { log } from 'console';
 import React, {useState} from 'react'
 
 const MyForm: React.FC = () => {
@@ -29,7 +28,6 @@ const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); //preventing default behaviour of the from
     console.log(fullName);
     console.log(e);
-    
 }
 
     return (
