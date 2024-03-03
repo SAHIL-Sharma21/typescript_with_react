@@ -1,12 +1,14 @@
 import './App.css';
 import Button from './components/Button'; //Button is aa functional component
 import Button2 from './components/Button2';
+import Button3 from './components/Button3';
 import MyForm from './components/Form';
-
+import {CounterProvider} from './context/Counter'
 
 function App() {
   return (
     <>
+    <CounterProvider>
     <div className="App">
       <h1>TypeScript with react</h1>
       <Button text='Click btn' onClick={() => console.log("Button 1 clicked!")} />
@@ -32,6 +34,14 @@ function App() {
     <div>
         <MyForm />
     </div>
+
+
+    {/* context in ts  */}
+    <div>
+      <Button3 text= "context value" />
+    </div>
+    </CounterProvider>
+    
     </>
   );
 }
